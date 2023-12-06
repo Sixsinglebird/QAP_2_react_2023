@@ -1,9 +1,16 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
+import '@testing-libnrary/jest-dom';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders Display', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const displayElement = screen.queryByTestId("display_nav");
+  expect(displayElement).toBeInTheDocument();
 });
+
+test('renders text', async () => {
+  const displayText =await screen.findByText("Navigation");
+  expect(displayText).toBeInTheDocument();
+});
+
