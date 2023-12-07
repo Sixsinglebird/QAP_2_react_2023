@@ -1,9 +1,9 @@
 import Display from "./Display";
 
 const Main = () => {
-    return<div className={"page"} id={"main_page"}>
+    return<>
         <Display />
-    </div>
+    </>
 }
 
 export default Main;

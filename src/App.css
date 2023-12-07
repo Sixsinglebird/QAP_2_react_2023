@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: radial-gradient(circle, rgba(0,0,0,0.65), rgba(0,0,0,1));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content {
+    overflow-y: auto;
+}
+
+.display {
+    margin: 64px auto;
+    width: 640px;
+    height: 200px;
+}
+
+.flex {
+    display:flex;
+}
+
+.edit_options {
+    margin-left: auto;
+}
+
+.display_nav {
+    display: flex;
+    background-color: rgba(255,255,255,0.75);
+    width: 100%;
+}
+
+.page {
+    background-color: rgba(255,255,255,0.75);
+    height: 100%;
+}
+
+.nav {
+    background-color: rgba(0,0,0,0.25);
+    width: 80px;
+    height: fit-content;
+}
+
+.content_panel {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(220,220,255,0.75);
+}
+
+.flex_space {
+    display: flex;
+    justify-content: left;
+}
+
+.page_screen {
+    background-color: rgba(255,255,255,0.75);
+    width: 95%;
+    margin: 0 8px 0 0 ;
+}
+
+button {
+    background-color: lightgrey;
+    margin: 8px 2px;
+    width: 72px;
+}
+.content_panel button {
+    margin-left: auto
+}
+
+h3 {
+    background-color: rgba(255,255,255,0.75);
+}
+
+
+
+
+
