@@ -5,29 +5,51 @@
 }
 
 html {
-    background-color: ivory;
+    background: radial-gradient(circle, rgba(0,0,0,0.65), rgba(0,0,0,1));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content {
+    overflow-y: auto;
 }
 
 .display {
-    margin: auto;
-    /*background-color: grey;*/
-    border: 1px solid black;
-    width: 60%;
+    margin: 64px auto;
+    width: 640px;
+    height: 200px;
+}
+
+.flex {
+    display:flex;
+}
+
+.edit_options {
+    margin-left: auto;
+}
+
+.display_nav {
+    display: flex;
+    background-color: rgba(255,255,255,0.75);
+    width: 100%;
 }
 
 .page {
-    background-color: white;
+    background-color: rgba(255,255,255,0.75);
+    height: 100%;
 }
 
-/*.nav {*/
-/*    background-color: lightgrey;*/
-/*    border: 1px solid black;*/
-/*    width: 80px;*/
-/*}*/
+.nav {
+    background-color: rgba(0,0,0,0.25);
+    width: 80px;
+    height: fit-content;
+}
 
 .content_panel {
-    background-color: lightblue;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(220,220,255,0.75);
 }
 
 .flex_space {
@@ -36,18 +58,24 @@ html {
 }
 
 .page_screen {
-    background-color: white;
-    border: 1px solid black;
+    background-color: rgba(255,255,255,0.75);
     width: 95%;
     margin: 0 8px 0 0 ;
 }
 
 button {
     background-color: lightgrey;
-    border: 1px solid black;
-    width: 80px;
-    height: 40px;
+    margin: 8px 2px;
+    width: 72px;
 }
+.content_panel button {
+    margin-left: auto
+}
+
+h3 {
+    background-color: rgba(255,255,255,0.75);
+}
+
 
 
 

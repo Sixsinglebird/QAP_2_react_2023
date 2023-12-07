@@ -1,4 +1,5 @@
 import { JSX } from "react";
+import EditOptions from "./EditOptions";
 
 const Content = (data:any) => {
     const formatData = (data:any) => {
@@ -15,7 +16,10 @@ const Content = (data:any) => {
                     tmp.push(
                         <div className={"content_panel"} key={i}>
                             <h3>Code: {airports[i].code}</h3>
-                            <h4>Name: {airports[i].name}</h4>
+                            <div className={"flex"}>
+                                <h4>{airports[i].name}</h4>
+                                <EditOptions />
+                            </div>
                         </div>
                     );
                 }
@@ -27,9 +31,12 @@ const Content = (data:any) => {
                 for (let i = 0; i < aircraft.length; i++) {
                     tmp.push(
                         <div className={"content_panel"} key={i}>
-                            <h3>Airline: {aircraft[i].airlineName}</h3>
-                            <h4>Name: {aircraft[i].type}</h4>
-                            <h4>Model: {aircraft[i].model}</h4>
+                            <h3>{aircraft[i].airlineName}</h3>
+                            <div className={"flex"}>
+                                <h4>Type: {aircraft[i].type}</h4>
+                                <h4>Model: {aircraft[i].model}</h4>
+                                <EditOptions />
+                            </div>
                         </div>
                     );
                 }
@@ -40,8 +47,11 @@ const Content = (data:any) => {
                 for (let i = 0; i < passengers.length; i++) {
                     tmp.push(
                         <div className={"content_panel"} key={i}>
-                            <h3>Name: {passengers[i].firstName} {passengers[i].lastName}</h3>
-                            <h4>Phone: {passengers[i].phoneNumber}</h4>
+                            <div className={"flex"}>
+                                <h3>{passengers[i].firstName} {passengers[i].lastName}</h3>
+                                <h4>Phone: {passengers[i].phoneNumber}</h4>
+                                <EditOptions />
+                            </div>
                         </div>
                     );
                 }
@@ -52,8 +62,11 @@ const Content = (data:any) => {
                 for (let i = 0; i < cities.length; i++) {
                     tmp.push(
                         <div className={"content_panel"} key={i}>
-                            <h3>Name: {cities[i].name}</h3>
-                            <h4>Province: {cities[i].province}</h4>
+                            <div className={"flex"}>
+                                <h3>{cities[i].name}</h3>
+                                <h4>{cities[i].province}</h4>
+                                <EditOptions />
+                            </div>
                         </div>
                     );
                 }
@@ -68,6 +81,7 @@ const Content = (data:any) => {
 
     return (
         <div className={"content"}>
+            <h2>{Object.keys(data.data._embedded)[0]}</h2>
             {formatData(data)}
         </div>
     );
