@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: ivory;
+}
+
+.display {
+    margin: auto;
+    /*background-color: grey;*/
+    border: 1px solid black;
+    width: 60%;
+}
+
+.page {
+    background-color: white;
+}
+
+/*.nav {*/
+/*    background-color: lightgrey;*/
+/*    border: 1px solid black;*/
+/*    width: 80px;*/
+/*}*/
+
+.content_panel {
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+.flex_space {
+    display: flex;
+    justify-content: left;
+}
+
+.page_screen {
+    background-color: white;
+    border: 1px solid black;
+    width: 95%;
+    margin: 0 8px 0 0 ;
+}
+
+button {
+    background-color: lightgrey;
+    border: 1px solid black;
+    width: 80px;
+    height: 40px;
+}
+
+
+
+
